@@ -1,4 +1,4 @@
- 
+import java.util.ArrayList;
 
 public class LoopFun
 {
@@ -10,7 +10,11 @@ public class LoopFun
        * @return the factorial of the number
        */
       public Integer factorial(Integer number){
-          return null;
+          Integer n = Integer.valueOf(number);
+          for (int x = n-1; x>0;x--){
+              n*=x;
+          }
+          return n;
       }
 
       /**
@@ -37,6 +41,11 @@ public class LoopFun
        * @return the encrypted string by shifting each character by three character
        */
       public String encrypt(String word) {
-          return null;
+          ArrayList<String> s = new ArrayList<>();
+          for (char c ='a';c<'z';c++){
+          }
+          while (true){
+              char c ='a';
+          }
       }
 }

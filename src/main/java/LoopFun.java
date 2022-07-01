@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-
 public class LoopFun
 {
 
@@ -25,7 +23,12 @@ public class LoopFun
        * @return Upper case string of the first letter of each word
        */
       public String acronym(String phrase) {
-          return null;
+          String [] s1 = phrase.split(" ");
+          String result ="";
+          for (String s:s1){
+              result+=s.charAt(0);
+          }
+          return result.toUpperCase();
       }
 
       /**
@@ -41,11 +44,15 @@ public class LoopFun
        * @return the encrypted string by shifting each character by three character
        */
       public String encrypt(String word) {
-          ArrayList<String> s = new ArrayList<>();
-          for (char c ='a';c<'z';c++){
+          String s = "";
+          for (int x = 0; x<word.length();x++){
+              char c = (char) (word.charAt(x)+3);
+              if (c>'z'){
+                  s+= (char) (word.charAt(x)- (26-3));
+              } else {
+                  s+= (char) (word.charAt(x)+3);
+              }
           }
-          while (true){
-              char c ='a';
-          }
+          return s;
       }
 }

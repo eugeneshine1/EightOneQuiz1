@@ -37,6 +37,7 @@ public class MathUtilities{
       Double n = new Double(number);
 
       return n/2;
+      //return n/2.0
   }
 
   /**
@@ -45,11 +46,12 @@ public class MathUtilities{
    * @return true if the number is odd, false if it is even
    */
   public Boolean isOdd(Integer number){
-      Integer n = new Integer(number);
-      if (n%2 !=0){
-          return true;
-      }else
-      return false;
+//      Integer n = new Integer(number);
+//      if (n%2 !=0){
+//          return true;
+//      }else
+//      return false;
+      return number%2 ==1;
   }
 
 
